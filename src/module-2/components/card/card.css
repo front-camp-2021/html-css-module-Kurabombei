@@ -33,17 +33,15 @@ body {
   border-radius: 0.8rem;
 }
 
-.card-photo {
+.card-content {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   padding: 2rem;
-  height: 30rem;
 }
 
 .photo {
   display: block;
-  margin: 0 auto;
+  margin: 3rem auto;
 }
 
 .spacer {
@@ -110,7 +108,6 @@ body {
   border: none;
 
   text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
   font-size: 1.4rem;
   font-weight: 600;
 
