@@ -15,3 +15,83 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+.header {
+  width: 100%;
+}
+
+.header-content {
+  height: 7.2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 3.8rem;
+  gap: 2rem;
+  font-size: 4.8rem;
+  font-weight: 600;
+  color: #7e72f2;
+}
+
+.header a {
+  padding: 0.5rem;
+}
+
+.header a:hover {
+  background-color: rgba(0, 0, 0, 0.1625);
+}
+
+.logo {
+  width: 92px;
+}
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs li {
+  display: inline;
+  vertical-align: middle;
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: #7e72f2;
+}
+
+.breadcrumb-icon {
+  font-size: large;
+}
+
+.breadcrumbs li+li:before {
+  padding: 0.8rem;
+  color: #000;
+  content: url("../../../assets/path.svg") url("../../../assets/path.svg");
+}
+
+.breadcrumbs li a {
+  color: #7e72f2;
+  text-decoration: none;
+}
+
+.breadcrumbs li a.active {
+  color: #2c2c2c;
+}
+
+.breadcrumbs li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+
+@media screen and (max-width: 600px) {
+  .header-content {
+    height: fit-content;
+    font-size: 3em;
+    flex-flow: row wrap;
+    justify-content: center;
+  }
+  a .logo {
+    display: block;
+    width: 50vw;
+  }
+}
+
