@@ -108,6 +108,7 @@ body {
   height: 45px;
   width: 100%;
   border: none;
+  cursor: pointer;
 
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
