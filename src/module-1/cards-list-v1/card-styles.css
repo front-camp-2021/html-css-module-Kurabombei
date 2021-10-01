@@ -1,0 +1,133 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.6rem;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  height: 486px;
+  margin: 1.4rem;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.135216);
+  border-radius: 0.8rem;
+}
+
+.card-photo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 2rem;
+  height: 30rem;
+}
+
+.photo {
+  display: block;
+  margin: 0 auto;
+}
+
+.spacer {
+  /* flex: 1 was needed for flex growing feature. flex: 1 0 auto is a quickfix for safari troubles */
+  flex: 1 0 auto;
+}
+
+.card-props {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin: 0 1.6em;
+  font-weight: 400;
+  font-size: 1.125em;
+}
+
+.rating {
+  display: flex;
+  gap: 1rem;
+  padding: 0.6rem 1.2rem;
+  font-weight: 400;
+  color: #fff;
+  background: #6F64F8;
+  border-radius: 3px;
+}
+
+.price {
+  padding: 0.6rem 1.2rem;
+}
+
+.price::before {
+  content: "$ ";
+}
+
+.card-text {
+  display: inline-flex;
+  flex-flow: wrap column;
+  gap: 0.3rem;
+  margin: 1.8em;
+  align-content: space-between;
+  color: #2c2c2c;
+}
+
+.card-title {
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.card-subtitle {
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: flex-end;
+  width: 400px;
+}
+
+.footer-button {
+  height: 45px;
+  width: 100%;
+  border: none;
+
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 600;
+
+}
+
+.button-icons {
+  vertical-align: middle;
+  margin-right: 0.8rem;
+}
+
+.wishlist {
+  background: #ededed;
+  border-radius: 0 0 0 8px;
+}
+
+.cart {
+  background: #6f64f8;
+  color: #fff;
+  border-radius: 0 0 8px 0;
+}
