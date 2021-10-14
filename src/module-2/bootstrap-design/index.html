@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Online Store</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
-
 <body>
 
-<div class="header">
-  <div class="header-content">
-    <a href="#">
-      <img src="../../assets/logo.png" class="logo">
-    </a>
-    Online Store
+<header class="header container-fluid p-4">
+  <div class="row center align-items-center">
+    <div class="header__logo d-flex flex-wrap col-12 col-md-2">
+      <a href="#">
+        <img src="../../assets/logo.png" class="logo">
+      </a>
+    </div>
+    <div class="header__text d-flex flex-wrap col-12 col-md-8">
+      Online Store
+    </div>
   </div>
-  <div class="breadcrumbs">
-    <ul>
-      <li><a href="#"><i class="bi bi-house-door breadcrumb-icon"></i></a></li>
-      <li><a href="#">eCommerce</a></li>
-      <li><a href="#" class="active">Electronics</a></li>
-    </ul>
+  <div class="row align-items-center">
+    <div class="breadcrumbs col-12">
+      <ul>
+        <li><a href="#"><i class="bi bi-house-door breadcrumb-icon"></i></a></li>
+        <li><a href="#">eCommerce</a></li>
+        <li><a href="#" class="active">Electronics</a></li>
+      </ul>
+    </div>
   </div>
-</div>
+</header>
 
-<main>
-  <aside>
-    <div class="filter">
-      <div class="filter__header">
+<main class="container">
+  <aside class="row col-12 col-md-3">
+    <div class="filter container-fluid">
+      <div class="filter__header row col-12">
         <label>Filters</label>
         <button type="button" class="header__button-return">
           <img src="../../assets/path_left.svg">
@@ -217,7 +220,7 @@
       </div>
     </div>
   </aside>
-  <div class="main-content">
+  <div class="main-content row col-12 col-md-9">
     <div class="main__header">
       <label>7, 629 results found</label>
       <button type="button" class="header__button-wishlist">
@@ -230,22 +233,21 @@
     </div>
     <div class="main__card-list">
       <div class="card">
-        <div class="card-photo">
-          <img class="photo" src="../../assets/apple-watch.png">
-        </div>
-        <div class="spacer"></div>
-        <div class="card-props">
-          <div class="rating">4.5 <i class="bi bi-star"></i></div>
-          <div class="spacer"></div>
-          <div class="price">399</div>
-        </div>
-        <div class="card-text">
-          <span class="card-title">Apple Watch Series 4 GPS</span>
-          <span class="card-subtitle">Redesigned from scratch and completely revised.</span>
-        </div>
-        <div class="card-footer">
-          <button type="button" class="footer-button wishlist"> <i class="bi bi-heart button-icons"></i> Wishlist</button>
-          <button type="button" class="footer-button cart"> <i class="bi bi-bag-plus button-icons"></i> Add to card</button>
+        <img class="card-img-top" src="../../assets/apple-watch.png">
+        <div class="card-body">
+          <div class="card-props">
+            <div class="rating">4.5 <i class="bi bi-star"></i></div>
+            <div class="spacer"></div>
+            <div class="price">399</div>
+          </div>
+          <div class="card-text">
+            <span class="card-title">Apple Watch Series 4 GPS</span>
+            <span class="card-subtitle">Redesigned from scratch and completely revised.</span>
+          </div>
+          <div class="card-footer">
+            <button type="button" class="footer-button wishlist"> <i class="bi bi-heart button-icons"></i> Wishlist</button>
+            <button type="button" class="footer-button cart"> <i class="bi bi-bag-plus button-icons"></i> Add to card</button>
+          </div>
         </div>
       </div>
       <div class="card">
@@ -341,15 +343,13 @@
         </div>
       </div>
     </div>
-
   </div>
-
 </main>
 
 <footer>
   <div class="main__pagination">
     <a href="#">
-      <img src="../../assets/path_left.svg"></a>
+      <img src="../../../assets/path_left.svg"></a>
     <div class="pagination__list">
       <a href="#">1</a>
       <a href="#">2</a>
@@ -363,9 +363,12 @@
       <a href="#">10</a>
     </div>
     <a href="#">
-      <img src="../../assets/path.svg"></a>
+      <img src="../../../assets/path.svg"></a>
   </div>
 </footer>
-</body>
 
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
 </html>
