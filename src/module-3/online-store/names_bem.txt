@@ -1,2 +1,28 @@
-header
-header_content -> header__content
+Naming changes in module 3
+
+header block
+header_content -> header__logo
+header__logo -> header__image
+header a +class="header__link"
+
+breadcrumbs block (inside header)
+breadcrumbs ul +class="breadcrumbs__list"
+breadcrumbs ul li +class="breadcrumbs__element"
+breadcrumbs ul li a +class="breadcrumbs__link/breadcrumbs__link--active"
+breadcrumbs .icon -> breadcrumbs__icon
+
+filter block
+filter-header -> filter__overtop  (as mixins)
+card__categories, card__brands, card__ranges -> filter__categories
+card-spacer -> filter__spacer
+renamed buttons as card__button-* to filter__button-*
+
+wrapper main -> +class main-wrapper
+main-content__search -> search-box
+main-card-list -> main-content__card-grid
+
+card-photo -> card__photo
+photo -> card__image
+everything like card-text -> card__text
+
+pagination changed namings a bit according to BEM. Rewrited scss.

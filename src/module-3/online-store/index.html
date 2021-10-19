@@ -12,37 +12,34 @@
 </head>
 
 <body>
-
 <div class="header">
-  <div class="header__content">
-    <a href="#">
-      <img src="../../assets/logo.png" class="logo">
-    </a>
+  <div class="header__logo">
+    <a class="header__link" href="#"><img class="header__image" src="../../assets/logo.png"></a>
     Online Store
   </div>
   <div class="breadcrumbs">
-    <ul>
-      <li><a href="#"><i class="bi bi-house-door breadcrumb-icon"></i></a></li>
-      <li><a href="#">eCommerce</a></li>
-      <li><a href="#" class="active">Electronics</a></li>
+    <ul class="breadcrumbs__list">
+      <li class="breadcrumbs__element"><a href="#" class="breadcrumbs__link"><i class="bi bi-house-door breadcrumbs__icon"></i></a></li>
+      <li class="breadcrumbs__element"><a href="#" class="breadcrumbs__link">eCommerce</a></li>
+      <li class="breadcrumbs__element"><a href="#" class="breadcrumbs__link--active">Electronics</a></li>
     </ul>
   </div>
 </div>
 
-<main>
-  <aside>
+<main class="main-wrapper">
+  <aside class="sidebar">
     <div class="filter">
-      <div class="filter__header">
+      <div class="filter__overtop">
         <label>Filters</label>
-        <button type="button" class="header__button-return">
+        <button type="button" class="filter__button-return">
           <img src="../../assets/path_left.svg">
           <img src="../../assets/path_left.svg">
         </button>
       </div>
-      <div class="filter__card">
-        <div class="card__ranges">
-          <label class="list__heading">Multi Range</label>
-          <ul class="list">
+      <div class="filter__content">
+        <div class="filter__categories">
+          <label class="filter__title">Multi Range</label>
+          <ul class="category-list">
             <li><input type="radio" id="10" name="range" value="10">
               <label for="10">$10</label></li>
             <li><input type="radio" id="10-100" name="range" value="10-100">
@@ -54,77 +51,76 @@
             <li><input type="radio" id="all" name="range">
               <label for="all">All</label></li>
           </ul>
-
         </div>
-        <div class="card__spacer"></div>
-        <div class="card__categories">
-          <label class="list__heading">Category</label>
-          <ul class="list">
-            <li class="list__element">
-              <label for="category">
+        <div class="filter__spacer"></div>
+        <div class="filter__categories">
+          <label class="filter__title">Category</label>
+          <ul class="category-list">
+            <li class="category-list__element">
+              <label>
                 <input type="checkbox"  name="category"> Cell Phones
               </label>
 
               <span>1920</span>
             </li>
-            <li class="list__element">
-              <label for="category">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="category"> Computers & Tablets
               </label>
 
               <span>1820</span>
             </li>
-            <li class="list__element">
-              <label for="category">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="category"> Cell Phone Accessories
               </label>
 
               <span>462</span>
             </li>
-            <li class="list__element">
-              <label for="category">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="category"> Appliances
               </label>
 
               <span>6556</span>
             </li>
-            <li class="list__element">
-              <label for="category">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="category"> Audio
               </label>
 
               <span>120</span>
             </li>
-            <li class="list__element">
-              <label for="category">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="category"> IPhone Accessories
               </label>
 
               <span>353</span>
             </li>
-            <li class="list__element">
-              <label for="category">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="category"> Cameras & Camcorders
               </label>
 
               <span>45</span>
             </li>
-            <li class="list__element">
-              <label for="category">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="category"> IPhone Cases & Clips
               </label>
 
               <span>456</span>
             </li>
-            <li class="list__element">
-              <label for="category">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="category"> TV & Home Theaters
               </label>
 
               <span>55</span>
             </li>
-            <li class="list__element">
-              <label for="category">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="category"> Small Kitchen Appliances
               </label>
 
@@ -132,75 +128,75 @@
             </li>
           </ul>
         </div>
-        <div class="card__spacer"></div>
-        <div class="card__brands">
-          <label class="list__heading">Brand</label>
-          <ul class="list">
-            <li class="list__element">
-              <label for="brand">
+        <div class="filter__spacer"></div>
+        <div class="filter__categories">
+          <label class="filter__title">Brand</label>
+          <ul class="category-list">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="brand"> Insigni
               </label>
 
               <span>220</span>
             </li>
-            <li class="list__element">
-              <label for="brand">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="brand"> Samsung
               </label>
 
               <span>120</span>
             </li>
-            <li class="list__element">
-              <label for="brand">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="brand"> Apple
               </label>
 
               <span>320</span>
             </li>
-            <li class="list__element">
-              <label for="brand">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="brand"> HP
               </label>
 
               <span>32</span>
             </li>
-            <li class="list__element">
-              <label for="brand">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="brand"> Sony
               </label>
 
               <span>520</span>
             </li>
-            <li class="list__element">
-              <label for="brand">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="brand"> Metra
               </label>
 
               <span>55</span>
             </li>
-            <li class="list__element">
-              <label for="brand">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="brand"> Dyne
               </label>
 
               <span>120</span>
             </li>
-            <li class="list__element">
-              <label for="brand">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="brand"> LG
               </label>
 
               <span>98</span>
             </li>
-            <li class="list__element">
-              <label for="brand">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="brand"> Canon
               </label>
 
               <span>99</span>
             </li>
-            <li class="list__element">
-              <label for="brand">
+            <li class="category-list__element">
+              <label >
                 <input type="checkbox"  name="brand"> Speck
               </label>
 
@@ -211,161 +207,157 @@
       </div>
 
       <div class="filter__bottom">
-        <button type="button" class="bottom__button-clear">
+        <button type="button" class="filter__button-clear">
           Clear all
         </button>
       </div>
     </div>
   </aside>
   <div class="main-content">
-    <div class="main__header">
+    <div class="main-content__overtop">
       <label>7, 629 results found</label>
-      <button type="button" class="header__button-wishlist">
+      <button type="button" class="main-content__button-wishlist">
         <i class="bi bi-heart"></i>
       </button>
     </div>
-    <div class="main__search-box">
-      <input type="text" class="main__input-search" placeholder="Search">
+    <div class="search-box">
+      <input type="text" class="search-box__input" placeholder="Search">
       <i class="bi bi-search"></i>
     </div>
-    <div class="main__card-list">
+    <div class="main-content__card-grid">
       <div class="card">
-        <div class="card-photo">
-          <img class="photo" src="../../assets/apple-watch.png">
+        <div class="card__photo">
+          <img class=card__image src="../../assets/apple-watch.png">
         </div>
-        <div class="spacer"></div>
-        <div class="card-props">
-          <div class="rating">4.5 <i class="bi bi-star"></i></div>
-          <div class="spacer"></div>
-          <div class="price">399</div>
+        <div class="card__spacer"></div>
+        <div class="card__props">
+          <div class="card__rating">4.5 <i class="bi bi-star"></i></div>
+          <div class="card__spacer"></div>
+          <div class="card__price">399</div>
         </div>
-        <div class="card-text">
-          <span class="card-title">Apple Watch Series 4 GPS</span>
-          <span class="card-subtitle">Redesigned from scratch and completely revised.</span>
+        <div class="card__text">
+          <span class="card__title">Apple Watch Series 4 GPS</span>
+          <span class="card__subtitle">Redesigned from scratch and completely revised.</span>
         </div>
-        <div class="card-footer">
-          <button type="button" class="footer-button wishlist"> <i class="bi bi-heart button-icons"></i> Wishlist</button>
-          <button type="button" class="footer-button cart"> <i class="bi bi-bag-plus button-icons"></i> Add to card</button>
+        <div class="card__footer">
+          <button type="button" class="card__button wishlist"> <i class="bi bi-heart card__icons"></i> Wishlist</button>
+          <button type="button" class="card__button cart"> <i class="bi bi-bag-plus card__icons"></i> Add to card</button>
         </div>
       </div>
       <div class="card">
-        <div class="card-photo">
-          <img class="photo" src="../../assets/jbl-speaker.png">
+        <div class="card__photo">
+          <img class=card__image src="../../assets/jbl-speaker.png">
         </div>
-        <div class="spacer"></div>
-        <div class="card-props">
-          <div class="spacer"></div>
-          <div class="price"> 199</div>
+        <div class="card__spacer"></div>
+        <div class="card__props">
+          <div class="card__spacer"></div>
+          <div class="card__price"> 199</div>
         </div>
-        <div class="card-text">
-          <span class="card-title">JBL Speaker</span>
-          <span class="card-subtitle">Redesigned from scratch and completely revised.</span>
+        <div class="card__text">
+          <span class="card__title">JBL Speaker</span>
+          <span class="card__subtitle">Redesigned from scratch and completely revised.</span>
         </div>
-        <div class="card-footer">
-          <button type="button" class="footer-button wishlist"> <i class="bi bi-heart button-icons"></i> Wishlist</button>
-          <button type="button" class="footer-button cart"> <i class="bi bi-bag-plus button-icons"></i> Add to card</button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-photo">
-          <img class="photo" src="../../assets/iphone-x.png">
-        </div>
-        <div class="spacer"></div>
-        <div class="card-props">
-          <div class="rating">4.9 <i class="bi bi-star"></i></div>
-          <div class="spacer"></div>
-          <div class="price">899</div>
-        </div>
-        <div class="card-text">
-          <span class="card-title">Apple iPhone X 128GB</span>
-          <span class="card-subtitle">Redesigned from scratch and completely revised.</span>
-        </div>
-        <div class="card-footer">
-          <button type="button" class="footer-button wishlist"> <i class="bi bi-heart button-icons"></i> Wishlist</button>
-          <button type="button" class="footer-button cart"> <i class="bi bi-bag-plus button-icons"></i> Add to card</button>
+        <div class="card__footer">
+          <button type="button" class="card__button wishlist"> <i class="bi bi-heart card__icons"></i> Wishlist</button>
+          <button type="button" class="card__button cart"> <i class="bi bi-bag-plus card__icons"></i> Add to card</button>
         </div>
       </div>
       <div class="card">
-        <div class="card-photo">
-          <img class="photo" src="../../assets/beats-headphones.png">
+        <div class="card__photo">
+          <img class=card__image src="../../assets/iphone-x.png">
         </div>
-        <div class="spacer"></div>
-        <div class="card-props">
-          <div class="spacer"></div>
-          <div class="price">459</div>
+        <div class="card__spacer"></div>
+        <div class="card__props">
+          <div class="card__rating">4.9 <i class="bi bi-star"></i></div>
+          <div class="card__spacer"></div>
+          <div class="card__price">899</div>
         </div>
-        <div class="card-text">
-          <span class="card-title">Beats Headphones</span>
-          <span class="card-subtitle">Redesigned from scratch and completely revised.</span>
+        <div class="card__text">
+          <span class="card__title">Apple iPhone X 128GB</span>
+          <span class="card__subtitle">Redesigned from scratch and completely revised.</span>
         </div>
-        <div class="card-footer">
-          <button type="button" class="footer-button wishlist"> <i class="bi bi-heart button-icons"></i> Wishlist</button>
-          <button type="button" class="footer-button cart"> <i class="bi bi-bag-plus button-icons"></i> Add to card</button>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-photo">
-          <img class="photo" src="../../assets/macbook-pro.png">
-        </div>
-        <div class="spacer"></div>
-        <div class="card-props">
-          <div class="spacer"></div>
-          <div class="price">2499</div>
-        </div>
-        <div class="card-text">
-          <span class="card-title">Apple Macbook Pro 512GB SSD</span>
-          <span class="card-subtitle">Redesigned from scratch and completely revised.</span>
-        </div>
-        <div class="card-footer">
-          <button type="button" class="footer-button wishlist"> <i class="bi bi-heart button-icons"></i> Wishlist</button>
-          <button type="button" class="footer-button cart"> <i class="bi bi-bag-plus button-icons"></i> Add to card</button>
+        <div class="card__footer">
+          <button type="button" class="card__button wishlist"> <i class="bi bi-heart card__icons"></i> Wishlist</button>
+          <button type="button" class="card__button cart"> <i class="bi bi-bag-plus card__icons"></i> Add to card</button>
         </div>
       </div>
       <div class="card">
-        <div class="card-photo">
-          <img class="photo" src="../../assets/ipad-pro.png">
+        <div class="card__photo">
+          <img class=card__image src="../../assets/beats-headphones.png">
         </div>
-        <div class="spacer"></div>
-        <div class="card-props">
-          <div class="rating">4.2 <i class="bi bi-star"></i></div>
-          <div class="spacer"></div>
-          <div class="price">899</div>
+        <div class="card__spacer"></div>
+        <div class="card__props">
+          <div class="card__spacer"></div>
+          <div class="card__price">459</div>
         </div>
-        <div class="card-text">
-          <span class="card-title">Apple iPad Pro 64GB</span>
-          <span class="card-subtitle">Redesigned from scratch and completely revised.</span>
+        <div class="card__text">
+          <span class="card__title">Beats Headphones</span>
+          <span class="card__subtitle">Redesigned from scratch and completely revised.</span>
         </div>
-        <div class="card-footer">
-          <button type="button" class="footer-button wishlist"> <i class="bi bi-heart button-icons"></i> Wishlist</button>
-          <button type="button" class="footer-button cart"> <i class="bi bi-bag-plus button-icons"></i> Add to card</button>
+        <div class="card__footer">
+          <button type="button" class="card__button wishlist"> <i class="bi bi-heart card__icons"></i> Wishlist</button>
+          <button type="button" class="card__button cart"> <i class="bi bi-bag-plus card__icons"></i> Add to card</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__photo">
+          <img class=card__image src="../../assets/macbook-pro.png">
+        </div>
+        <div class="card__spacer"></div>
+        <div class="card__props">
+          <div class="card__spacer"></div>
+          <div class="card__price">2499</div>
+        </div>
+        <div class="card__text">
+          <span class="card__title">Apple Macbook Pro 512GB SSD</span>
+          <span class="card__subtitle">Redesigned from scratch and completely revised.</span>
+        </div>
+        <div class="card__footer">
+          <button type="button" class="card__button wishlist"> <i class="bi bi-heart card__icons"></i> Wishlist</button>
+          <button type="button" class="card__button cart"> <i class="bi bi-bag-plus card__icons"></i> Add to card</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card__photo">
+          <img class=card__image src="../../assets/ipad-pro.png">
+        </div>
+        <div class="card__spacer"></div>
+        <div class="card__props">
+          <div class="card__rating">4.2 <i class="bi bi-star"></i></div>
+          <div class="card__spacer"></div>
+          <div class="card__price">899</div>
+        </div>
+        <div class="card__text">
+          <span class="card__title">Apple iPad Pro 64GB</span>
+          <span class="card__subtitle">Redesigned from scratch and completely revised.</span>
+        </div>
+        <div class="card__footer">
+          <button type="button" class="card__button wishlist"> <i class="bi bi-heart card__icons"></i> Wishlist</button>
+          <button type="button" class="card__button cart"> <i class="bi bi-bag-plus card__icons"></i> Add to card</button>
         </div>
       </div>
     </div>
-
   </div>
-
 </main>
-
 <footer>
-  <div class="main__pagination">
-    <a href="#">
-      <img src="../../assets/path_left.svg"></a>
+  <div class="pagination">
+    <a class="pagination__link" href="#">
+      <img class="pagination__image" src="../../assets/path_left.svg"></a>
     <div class="pagination__list">
-      <a href="#">1</a>
-      <a href="#">2</a>
-      <a href="#">3</a>
-      <a href="#">4</a>
-      <a href="#">5</a>
-      <a href="#" class="active">6</a>
-      <a href="#">7</a>
-      <a href="#">8</a>
-      <a href="#">9</a>
-      <a href="#">10</a>
+      <a class="pagination__link" href="#">1</a>
+      <a class="pagination__link" href="#">2</a>
+      <a class="pagination__link" href="#">3</a>
+      <a class="pagination__link" href="#">4</a>
+      <a class="pagination__link" href="#">5</a>
+      <a class="pagination__link pagination__link--active" href="#">6</a>
+      <a class="pagination__link" href="#">7</a>
+      <a class="pagination__link" href="#">8</a>
+      <a class="pagination__link" href="#">9</a>
+      <a class="pagination__link" href="#">10</a>
     </div>
-    <a href="#">
-      <img src="../../assets/path.svg"></a>
+    <a class="pagination__link" href="#">
+      <img class="pagination__image" src="../../assets/path.svg"></a>
   </div>
 </footer>
 </body>
-
 </html>
